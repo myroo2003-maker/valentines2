@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Happy Valentine's Day! </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header> 
+<div class="flex-container"></div>
+    <img height="300px" width="400px" src="images/IMG_1991.jpeg">
+    <img height="300px" width="310px" src="images/IMG_1992.jpeg">
+    <img height="300px" width="400px" src="images/IMG_1993.jpeg">
+    <img height="300px" width="300px" src="images/IMG_1984.jpeg">
+    <img height="300px" width="410px" src="images/IMG_1985.jpeg">
+    <img height="300px" width="400px" src="images/IMG_1989.jpeg">
+    <img height="300px" width="300px" src="images/IMG_1986.jpeg">
+    <img height="300px" width="400px" src="images/IMG_1988.jpeg">
+    <img height="300px" width="400px" src="images/IMG_1982.jpeg">
+
+
+
+<div class="text-container"></div>
+<h1>Happy Valentine's Day to the love of my life. 💕 </h1>
+<p>I was just wondering if you would.. be my valentine perhaps?</p>
+<button onclick="playAudio('noSound')">no..</button>
+<audio id="noSound" src="49053354-foghorn-313218.mp3"></audio>
+
+<button onclick="playAudio('yesSound')">YES!!!</button>
+<audio id="yesSound" src="freesound_community-yay-6120.mp3"></audio>
+</header>    
+<script>
+function playAudio(id) {
+  const audio = document.getElementById(id);
+  audio.currentTime = 0;
+  audio.play();
+}
+</script>
+</body>
+</html>
